@@ -8,8 +8,10 @@ import { HeroService } from './hero.service';
   template: `
     <h1>{{title}}</h1>
     <nav>
-      <a [routerLink]="['/dashboard']" routerLinkActive="active">Dashboard</a>
-      <a [routerLink]="['/heroes']" routerLinkActive="active">Heroes</a>
+      <a [routerLink]="['/dashboard']" routerLinkActive="active">All</a>
+      <a [routerLink]="['/heroes']" routerLinkActive="active">Missed</a>
+      <a [routerLink]="['/heroes']" routerLinkActive="active">Forwarded</a>
+      <a [routerLink]="['/heroes']" routerLinkActive="active">Answer</a>
     </nav>
     <router-outlet></router-outlet>
   `,
@@ -20,7 +22,7 @@ import { HeroService } from './hero.service';
   ]
 })
 export class AppComponent {
-  title = 'Tour of Heroes';
+  title = 'Group call log';
 }
 
 
